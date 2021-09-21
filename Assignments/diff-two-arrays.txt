@@ -1,0 +1,12 @@
+function diffArray(a, b) {
+  var newArr = [];  
+  var newConcat = a.concat(b);
+  
+  for (var i = 0; i < newConcat.length; i++) {
+    if (a.indexOf(newConcat[i]) === -1 || b.indexOf   (newConcat[i]) === -1) {
+     newArr.push(newConcat[i]);
+    }
+  }
+  return newArr;
+}
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
